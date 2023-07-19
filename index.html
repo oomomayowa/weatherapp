@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c756677d91.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body onload="autoLocate()">
+    <main>
+      <section class="glass">
+        <div class="dashboard">
+          <div class="user">
+            <h2>Weather Details</h2>
+          </div>
+
+          <div class="details">
+            <div class="ldhw">
+              <p><span class="opac">Location</span><span id="nameCity"> Ibadan NG</span></p>
+              <p><span class="opac">Description</span> <span id="cityDetails"> Light rain</span></p>
+              <p> <span class="opac">Humidity</span> <span id="humidity"> 83%</span></p>
+              <p><span class="opac">Wind</span> <span id="wind"> 2,35 m/s</span></p>
+              <div class="llmmfp">
+                <p><span class="opac">Longitude </span><span id="lon"> 3.8964°</span></p>
+                <p><span class="opac">Latitude </span><span id="las">7.387825.14°</span></p>
+                <p><span class="opac">Min-Temp</span>   <span id="tempMin"> 25.14℃</span></p>
+                <p><span class="opac">Max-Temp</span>  <span id="tempMax">25.14℃</span></p>
+                <p><span class="opac">Feels</span>   <span id="whatFeels"> 2.617℃</span></p>
+                <p><span class="opac">Pressure</span> <span id="press"> 1012 hPa </span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="games">
+          <div class="status">
+            <h1>Weather Forecast</h1>
+            <div class="card">
+              <input type="text" placeholder="Search Location" id="myCity" />
+              <button type="button" class="button" onclick="check()">
+                <i class="fa-solid fa-magnifying-glass-location check"></i>
+              </button>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card" style="transform: translateY(-50px)">
+              <div class="card-info">
+                <div id="tmp">
+                  <h2 id="temp">27 ℃</h2>
+                </div>
+                <div class="temText">
+                  <p id="city">Ibadan NG</p>
+                  <p id="cityD">Light rain</p>
+                  <p id="date"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
